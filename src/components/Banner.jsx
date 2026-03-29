@@ -5,7 +5,7 @@ import badgeImg from '../assets/Group 5.png';
 const Banner = () => {
     return (
         <div>
-            <div className="hero min-h-172">
+            <div className="hero min-h-192">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <img
                         src={bannerImg}
