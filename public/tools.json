@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Generate high-quality content quickly using advanced AI tools.",
+    "price": 10,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["AI content generation", "Grammar correction", "Multiple writing tones"],
+    "icon": "https://i.ibb.co.com/d0pxGQhV/writing-2327400-1.png"
+  },
+  {
+    "id": 2,
+    "name": "Design Templates Pack",
+    "description": "Access a wide range of ready-to-use design templates.",
+    "price": 25,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["500+ templates", "Editable files", "Commercial use"],
+    "icon": "https://i.ibb.co.com/HffdS8LD/design-tool.png"
+  },
+  {
+    "id": 3,
+    "name": "Premium Stock Assets",
+    "description": "Download high-quality stock images, videos, and graphics.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Unlimited downloads", "HD quality", "Royalty-free license"],
+    "icon": "https://i.ibb.co.com/WpW8zwpk/camera-8775444-1.png"
+  },
+  {
+    "id": 4,
+    "name": "Automation Toolkit",
+    "description": "Automate repetitive tasks and boost productivity.",
+    "price": 30,
+    "period": "yearly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Workflow automation", "Task scheduling", "Integration support"],
+    "icon": "https://i.ibb.co.com/Fbx8SBL0/operation.png"
+  },
+  {
+    "id": 5,
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes with ease and modern layouts.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["ATS-friendly templates", "Easy editing", "PDF export"],
+    "icon": "https://i.ibb.co.com/LD6wLgsd/portfolio.png"
+  },
+  {
+    "id": 6,
+    "name": "Social Media Content Kit",
+    "description": "Create engaging social media posts with ready-made assets.",
+    "price": 20,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Post templates", "Caption ideas", "Hashtag suggestions"],
+    "icon": "https://i.ibb.co.com/wNd8zmBX/social-media.png"
+  }
+]
