@@ -6,9 +6,9 @@ const Footer = () => {
     return (
         <div className='bg-[#101727]'>
             <div className='container mx-auto'>
-                <footer className="footer sm:footer-horizontal text-white p-10 md:py-10">
+                <footer className="footer sm:footer-horizontal text-gray-300 p-10 md:py-10">
                     <aside>
-                        <h2 className='text-4xl font-bold text-white'>DigiTools</h2>
+                        <h2 className='text-4xl font-bold text-gray-200'>DigiTools</h2>
                         <p className='max-w-96'>
                             Premium digital tools for creators, professionals, and businesses. Work smarter with our suite of powerful tools.
                         </p>
@@ -49,7 +49,7 @@ const Footer = () => {
                         </div>
                     </nav>
                 </footer>
-                <footer className=" text-white border-gray-600 border-t p-10 md:py-4 ">
+                <footer className=" text-gray-300 border-gray-700 border-t p-10 md:py-4 ">
                     <div className='flex justify-between items-center flex-wrap text-sm'>
                         <p>© {new Date().getFullYear()} Digitools. All right reserved</p>
                         <ul className='flex justify-between items-center gap-4 flex-wrap'>
