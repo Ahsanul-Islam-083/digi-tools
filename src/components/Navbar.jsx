@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Navbar = () => {
+const Navbar = ({cart}) => {
     return (
         <div className='shadow-sm sticky top-0 z-10 bg-white'>
             <div className="navbar container mx-auto">
@@ -32,8 +32,8 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end">
                     <div className="indicator rounded-full mr-2.5">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /> </svg>
-                        <span className="badge badge-sm indicator-item">8</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /> </svg>
+                        {cart.length ? <span className="badge badge-sm indicator-item bg-red-500 rounded-full font-bold text-xs text-white">{cart.length}</span>: <span></span>}
                     </div>
                     <a className='btn btn-ghost rounded-full'>Login</a>
                     <a className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full">Get Started</a>

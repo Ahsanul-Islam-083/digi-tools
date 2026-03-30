@@ -18,7 +18,7 @@ function App() {
 
   return (
     <>
-      <Navbar/>
+      <Navbar cart={cart}/>
       <Banner/>
       <Stats/>
 
@@ -31,7 +31,7 @@ function App() {
       <Workflow/>
       <Footer/>
 
-      <ToastContainer/>
+      <ToastContainer  position="top-center"/>
     </>
   )
 }
