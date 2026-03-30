@@ -5,10 +5,10 @@ import rocketImg from '../assets/rocket.png';
 
 const GetStarted = () => {
     return (
-        <div className='container mx-auto py-24'>
+        <div className='container mx-auto p-2 md:p-0 py-24'>
             <h2 className='text-4xl font-bold text-center'>Get Started in 3 Steps</h2>
             <p className='text-center text-gray-400 py-8'>Start using premium digital tools in minutes, not hours.</p>
-            <div className='grid md:grid-cols-3 gap-6'>
+            <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-6'>
                 <div className='border border-gray-100 shadow rounded-2xl px-5 py-16 transform transition duration-300 hover:scale-105 relative'>
                     <div className="badge bg-linear-to-r from-[#4F39F6] to-[#9514FA] badge-md rounded-full absolute top-2 right-2 py-4.5 text-white">01</div>
                    <div className='flex justify-center items-center mb-4'>

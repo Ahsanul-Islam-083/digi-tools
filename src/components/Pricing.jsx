@@ -6,7 +6,7 @@ const Pricing = () => {
             <h2 className='text-4xl font-bold text-center'>Simple, Transparent Pricing</h2>
             <p className='text-center text-gray-400 py-8'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
             <div className='container mx-auto'>
-                <div class="grid md:grid-cols-3 gap-6 items-center justify-center pb-24">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 items-center justify-center pb-24">
 
                     <div class="rounded-2xl px-8 py-10 shadow-xl flex flex-col h-128 bg-gray-100 border border-gray-200 transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
 

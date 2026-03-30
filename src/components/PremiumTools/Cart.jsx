@@ -16,7 +16,7 @@ const Cart = ({ cart, setCart }) => {
     }
 
     return (
-        <div className='p-10 border mt-6 border-gray-100 rounded-2xl'>
+        <div className='p-2 md:p-10 border mt-6 border-gray-100 rounded-2xl'>
             <h2 className='text-2xl font-bold'>Your Cart</h2>
 
             {
