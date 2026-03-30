@@ -3,7 +3,7 @@ import { CiShoppingCart } from 'react-icons/ci';
 import { toast } from 'react-toastify';
 
 const Cart = ({ cart, setCart }) => {
-    // console.log(cart);
+    
     const total = cart.reduce((sum, item) => sum + item.price, 0);
     const handlePayment = () => {
         setCart([]);
@@ -24,11 +24,11 @@ const Cart = ({ cart, setCart }) => {
                     <div className='space-y-4 '>
 
                         {
-                            cart.map(item => <div className='flex justify-between items-center bg-base-200 p-5 rounded-2xl'>
+                            cart.map(item => <div className='flex justify-between items-center bg-base-200 p-5 rounded-2xl transform transition-all duration-300 ease-in-out hover:scale-102 hover:shadow-xl hover:border border-pink-300'>
                                 <div className='flex items-center gap-4'>
 
                                     <div className='flex'>
-                                        <div className='p-4 border border-gray-200 rounded-full'><img className='h-8' src={item.icon} alt="" /></div>
+                                        <div className='p-4 border border-gray-200 rounded-full bg-white'><img className='h-8' src={item.icon} alt="" /></div>
                                     </div>
 
                                     <div>

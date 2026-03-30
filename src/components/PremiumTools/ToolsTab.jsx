@@ -3,7 +3,7 @@ import ToolsCard from './ToolsCard';
 import Cart from './Cart';
 
 const ToolsTab = ({ tools,cart,setCart }) => {
-    // console.log(tools);
+    
     const [tab, setTab] = useState("products")
 
     return (

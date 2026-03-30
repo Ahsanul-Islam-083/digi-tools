@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { toast } from 'react-toastify';
 
 const ToolsCard = ({ tool, cart,setCart }) => {
-    // console.log(tool);
+   
     const [buyNow, setBuyNow] =useState(false)
     const toolExist = cart.find(c=> c.id === tool.id);
     const handleBuyNow =()=>{
@@ -12,8 +12,6 @@ const ToolsCard = ({ tool, cart,setCart }) => {
             return;
         }
         setCart([...cart,tool])
-        // console.log(tool, "clicked");
-        // console.log(buyNow);
         
         toast.success("Added to cart")
         
