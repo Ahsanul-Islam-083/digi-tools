@@ -1,16 +1,35 @@
-# React + Vite
+#  [Digi Tools – Premium Digital Tools Store](https://digi-tool.netlify.app/)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 About The Project
+Digi Tools is a simple and clean web app where users can explore different premium digital tools and add them to a cart. The goal of this project was to practice building a real-world UI using React, manage state efficiently, and create a smooth user experience with instant feedback.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Technologies Used
+- React.js  
+- Tailwind CSS  
+- DaisyUI  
+- JavaScript (ES6+)  
+- React-Toastify  
+- JSON (for product data)  
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Key Features
+- 🛒 **Add to Cart Functionality**  
+  Users can add tools to their cart with instant toast notifications. Duplicate items are prevented.
 
-## Expanding the ESLint configuration
+- 🔄 **Products & Cart Tab System**  
+  Clean tab interface to switch between product listing and cart view.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 💰 **Total Price Calculation & Checkout**  
+  Cart total is calculated dynamically using `reduce()` and users can simulate checkout with a success message.
+
+---
+
+## ⚙️ How It Works
+- Product data is fetched from a local `tools.json` file  
+- State is managed using React’s `useState`  
+- Cart updates instantly when items are added or removed  
+- Notifications are handled using React-Toastify  
+
