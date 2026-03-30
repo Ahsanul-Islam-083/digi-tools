@@ -1,7 +1,14 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const Cart = ({ cart, setCart }) => {
-    console.log(cart);
+    // console.log(cart);
+    const total = cart.reduce((sum, item)=> sum + item.price, 0);
+    const handlePayment =()=>{
+        setCart([]);
+        toast.success("Payment successful");
+    }
+    
 
     return (
         <div className='p-10 border border-gray-100 rounded-2xl'>
@@ -29,9 +36,9 @@ const Cart = ({ cart, setCart }) => {
             </div>
             <div className='flex justify-between items-center py-6'>
                 <h2 className='text-2xl text-gray-400 font-bold'>Total:</h2>
-                <h2 className='text-2xl font-bold'>$78</h2>
+                <h2 className='text-2xl font-bold'>${total}</h2>
             </div>
-            <button className='btn h-14 w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full text-lg'>Proceed to Checkout</button>
+            <button onClick={handlePayment} className='btn h-14 w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full text-lg'>Proceed to Checkout</button>
         </div>
     );
 };
