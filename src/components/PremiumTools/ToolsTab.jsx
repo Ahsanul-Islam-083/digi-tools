@@ -10,8 +10,8 @@ const ToolsTab = ({ tools,cart,setCart }) => {
         <div>
             {/* name of each tab group should be unique */}
             <div className="tabs bg-transparent justify-center items-center tabs-box shadow-none">
-                <input type="radio" name="my_tabs_1" className="tab rounded-full w-40" aria-label="Products" onClick={() => setTab("products")} defaultChecked />
-                <input type="radio" name="my_tabs_1" className="tab rounded-full w-40" aria-label={`Cart (${cart.length})`} onClick={() => setTab("cart")} />
+                <input type="radio" name="my_tabs_1" className={`tab rounded-full w-40 ${tab === "products" && "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white"}`} aria-label="Products" onClick={() => setTab("products")} defaultChecked />
+                <input type="radio" name="my_tabs_1" className={`tab rounded-full w-40 ${tab === "cart" && "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white"}`} aria-label={`Cart (${cart.length})`} onClick={() => setTab("cart")} />
             </div>
 
             {
