@@ -22,7 +22,7 @@ function App() {
       <Banner/>
       <Stats/>
 
-      <Suspense fallback={<span className="loading loading-dots loading-xl"></span>}>
+      <Suspense fallback={<div className='flex justify-center items-center py-90'><span className="loading loading-dots loading-xl"></span></div>}>
       <PremiumHeading toolsPromise={toolsPromise} cart={cart} setCart={setCart} />
       </Suspense>
 

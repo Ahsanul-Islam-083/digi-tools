@@ -1,4 +1,4 @@
-#  [Digi Tools – Premium Digital Tools Store](https://digi-tool.netlify.app/)
+#  [DigiTools – Premium Digital Tools Store](https://digi-tool.netlify.app/)
 
 ## 📌 About The Project
 Digi Tools is a simple and clean web app where users can explore different premium digital tools and add them to a cart. The goal of this project was to practice building a real-world UI using React, manage state efficiently, and create a smooth user experience with instant feedback.
