@@ -1,5 +1,4 @@
-
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 import './App.css'
 import Banner from './components/Banner'
 import Footer from './components/Footer'
@@ -9,10 +8,12 @@ import PremiumHeading from './components/PremiumTools/PremiumHeading'
 import Pricing from './components/Pricing'
 import Stats from './components/Stats'
 import Workflow from './components/Workflow'
+import { ToastContainer } from 'react-toastify'
 
 const toolsPromise = fetch("/tools.json").then(res => res.json());
 
 function App() {
+  const [cart,setCart] = useState([]);
 
 
   return (
@@ -22,13 +23,15 @@ function App() {
       <Stats/>
 
       <Suspense fallback={<span className="loading loading-dots loading-xl"></span>}>
-      <PremiumHeading toolsPromise={toolsPromise}/>
+      <PremiumHeading toolsPromise={toolsPromise} cart={cart} setCart={setCart} />
       </Suspense>
 
       <GetStarted/>
       <Pricing/>
       <Workflow/>
       <Footer/>
+
+      <ToastContainer/>
     </>
   )
 }

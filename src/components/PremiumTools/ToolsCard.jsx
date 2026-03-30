@@ -1,7 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
-const ToolsCard = ({ tool }) => {
-    console.log(tool);
+const ToolsCard = ({ tool, cart,setCart }) => {
+    // console.log(tool);
+    const [buyNow, setBuyNow] =useState(false)
+    const toolExist = cart.find(c=> c.id === tool.id);
+    const handleBuyNow =()=>{
+        setBuyNow(true);
+        if (toolExist) {
+            toast.warning("Item already exists !")
+            return;
+        }
+        setCart([...cart,tool])
+        // console.log(tool, "clicked");
+        // console.log(buyNow);
+        
+        toast.success("Added to cart")
+        
+    }
 
     return (
         <div className='border border-gray-200 rounded-2xl p-4 shadow transform transition duration-300 hover:scale-105 relative'>
@@ -32,7 +48,7 @@ const ToolsCard = ({ tool }) => {
                         tool.features.map((f,i)=> <li key={i} class="flex items-center gap-2"><span className='text-green-400'>✔</span> {f}</li>)
                     }
                 </ul>
-                <button className='btn w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full'>Buy Now</button>
+                <button onClick={handleBuyNow} className='btn w-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full'>{buyNow ? "Added to cart": "Buy Now"}</button>
             </div>
         </div>
     );

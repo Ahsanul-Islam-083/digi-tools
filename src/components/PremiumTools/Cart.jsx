@@ -1,24 +1,31 @@
 import React from 'react';
 
-const Cart = () => {
+const Cart = ({ cart, setCart }) => {
+    console.log(cart);
+
     return (
         <div className='p-10 border border-gray-100 rounded-2xl'>
             <h2 className='text-2xl font-bold'>Your Cart</h2>
             <div className='space-y-4 '>
-                <div className='flex justify-between items-center bg-base-200 p-5 rounded-2xl'>
-                    <div className='flex items-center gap-4'>
 
-                        <div className='flex'>
-                            <div className='p-4 border border-gray-200 rounded-full'><img className='h-10' src='' alt="" /></div>
-                        </div>
+                {
+                    cart.map(item => <div className='flex justify-between items-center bg-base-200 p-5 rounded-2xl'>
+                        <div className='flex items-center gap-4'>
 
-                        <div>
-                            <h5 className='text-xl font-semibold'>AI Writing Pro</h5>
-                            <p className='text-gray-400'>$29</p>
+                            <div className='flex'>
+                                <div className='p-4 border border-gray-200 rounded-full'><img className='h-8' src={item.icon} alt="" /></div>
+                            </div>
+
+                            <div>
+                                <h5 className='text-xl font-semibold'>{item.name}</h5>
+                                <p className='text-gray-400'>${item.price}</p>
+                            </div>
                         </div>
-                    </div>
-                    <button className='btn btn-ghost text-pink-600'>Remove</button>
-                </div>
+                        <button className='btn btn-ghost text-pink-600'>Remove</button>
+                    </div>)
+                }
+
+
             </div>
             <div className='flex justify-between items-center py-6'>
                 <h2 className='text-2xl text-gray-400 font-bold'>Total:</h2>
