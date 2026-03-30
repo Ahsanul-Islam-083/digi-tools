@@ -8,7 +8,11 @@ const Cart = ({ cart, setCart }) => {
         setCart([]);
         toast.success("Payment successful");
     }
-    
+    const handleDelete =(item)=>{
+        const filteredCart = cart.filter(c=>c.id !== item.id);
+        setCart(filteredCart);
+        toast.info("Item has been removed")
+    }
 
     return (
         <div className='p-10 border border-gray-100 rounded-2xl'>
@@ -28,7 +32,7 @@ const Cart = ({ cart, setCart }) => {
                                 <p className='text-gray-400'>${item.price}</p>
                             </div>
                         </div>
-                        <button className='btn btn-ghost text-pink-600'>Remove</button>
+                        <button onClick={()=>handleDelete(item)} className='btn btn-ghost text-pink-600'>Remove</button>
                     </div>)
                 }
 
